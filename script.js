@@ -275,19 +275,70 @@
 // array) 
 // GOOD LUCK 
 
-const calcTip = function(bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
-}
+// const calcTip = function(bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+// }
 
 // Arrow function method
 // const calcTip = bill =>  bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
 
 
-const bills  = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(tips);
+// const bills  = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(tips);
 
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
-console.log(total);
+// console.log(total);
+
+
+
+
+// *** Object ***
+//  objects are used for more unstructured data.
+const ibraheem  = {
+    firstName : 'Ibraheem',
+    lastName : "Omikunle",
+    age: 2043 - 2020,
+    job : 'Software Engineer',
+    hobies: ['Coding', 'Reading', 'Meditating'],
+    friends : ['Toheeb', 'Adam', "Hazzan"]
+};
+
+console.log(ibraheem);
+
+// Dot VS Bracket Notations
+
+console.log(ibraheem.lastName);
+console.log(ibraheem['firstName']);
+
+
+
+// Bracket notaton can also be used like this.
+const nameKey = 'Name';
+console.log(ibraheem['first' + nameKey]);
+console.log(ibraheem['last' + nameKey]);
+
+// const yourAim = prompt(`What do you want to know about ${ibraheem.firstName}, Choose between firstName, lastName, age, job, and friends `);
+
+// Undefine is what we get when we try to access a property on an object that does not exist.
+
+// console.log(ibraheem[yourAim]);
+
+// if(ibraheem[yourAim] ){
+//     console.log(ibraheem[yourAim]);
+// } else {
+//     console.log('Wrong input!');
+// }
+
+// ibraheem.location = 'Nigeria';
+// ibraheem['facebook'] = 'ibraheem82';
+// console.log(ibraheem);
+
+
+// * Coding Challenge
+//  "Ibraheem has 3 friends, and his best friend is called micheal"
+
+
+console.log(`"${ibraheem.firstName} has ${ibraheem.friends.length} friends, and his best friends is called ${ibraheem.friends[0]}`);
