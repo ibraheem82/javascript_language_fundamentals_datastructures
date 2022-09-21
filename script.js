@@ -297,28 +297,28 @@
 
 // *** Object ***
 //  objects are used for more unstructured data.
-const ibraheem  = {
-    firstName : 'Ibraheem',
-    lastName : "Omikunle",
-    age: 2043 - 2020,
-    job : 'Software Engineer',
-    hobies: ['Coding', 'Reading', 'Meditating'],
-    friends : ['Toheeb', 'Adam', "Hazzan"]
-};
+// const ibraheem  = {
+//     firstName : 'Ibraheem',
+//     lastName : "Omikunle",
+//     age: 2043 - 2020,
+//     job : 'Software Engineer',
+//     hobies: ['Coding', 'Reading', 'Meditating'],
+//     friends : ['Toheeb', 'Adam', "Hazzan"]
+// };
 
-console.log(ibraheem);
+// console.log(ibraheem);
 
 // Dot VS Bracket Notations
 
-console.log(ibraheem.lastName);
-console.log(ibraheem['firstName']);
+// console.log(ibraheem.lastName);
+// console.log(ibraheem['firstName']);
 
 
 
 // Bracket notaton can also be used like this.
-const nameKey = 'Name';
-console.log(ibraheem['first' + nameKey]);
-console.log(ibraheem['last' + nameKey]);
+// const nameKey = 'Name';
+// console.log(ibraheem['first' + nameKey]);
+// console.log(ibraheem['last' + nameKey]);
 
 // const yourAim = prompt(`What do you want to know about ${ibraheem.firstName}, Choose between firstName, lastName, age, job, and friends `);
 
@@ -341,4 +341,129 @@ console.log(ibraheem['last' + nameKey]);
 //  "Ibraheem has 3 friends, and his best friend is called micheal"
 
 
-console.log(`"${ibraheem.firstName} has ${ibraheem.friends.length} friends, and his best friends is called ${ibraheem.friends[0]}`);
+// console.log(`"${ibraheem.firstName} has ${ibraheem.friends.length} friends, and his best friends is called ${ibraheem.friends[0]}`);
+
+
+
+
+// ** Object methods.
+
+// const ibraheem  = {
+//     firstName : 'Ibraheem',
+//     lastName : "Omikunle",
+    // age: 2043 - 2020,
+//     birthYear: 1982,
+//     job : 'Software Engineer',
+//     hobies: ['Coding', 'Reading', 'Meditating'],
+//     friends : ['Toheeb', 'Adam', "Hazzan"],
+//     hasHouse: false,
+
+// Function expression.
+//     calcAge:  function(birthYearParam) {
+//         return 2048 -  birthYearParam;
+//     }
+// };
+
+
+// The [this] keyword id equal to the object on which the method is called
+// so ibraheem is calling the calcAge method in the function.
+//  [this] -> points to [ibraheem] 
+// calcAge:  function () {
+//     console.log(this);
+//     return 2048 -  this.birthYear;
+// }
+
+
+// ! the [this] keyword can also be used to store a new property.
+    // calcAge:  function() {
+    // A new property is created or the ibraheem object.
+    // Automatically age is already part of the ibraheem object property.
+        // this.age = 2013 - this.birthYear;
+        //  ! if we like we may not return anything.
+//         return this.age;
+// },
+
+
+// getBio: function() {
+//     return `${this.firstName} is a ${this.calcAge()} -years old ${this.job}, and he has ${this.hasHouse ? 'a' : 'no'} house.`;
+// }
+
+// };
+
+
+
+// const age =  ibraheem.calcAge(2020);
+// const age =  ibraheem['calcAge'](2020);
+// const ibraheemAge =  ibraheem['calcAge'];
+// console.log(age);
+// console.log(ibraheem.calcAge());
+// console.log(ibraheem.age);
+// console.log(ibraheem.getBio());
+
+
+
+
+// * Coding challenge
+
+// Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
+// implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+// Your tasks:
+// 1. For each of them, create an object with properties for their full name, mass, and
+// height (Mark Miller and John Smith)
+// 2. Create a 'calcBMI' method on each object to calculate the BMI (the same
+// method on both objects). Store the BMI value to a property, and also return it
+// from the method
+// 3. Log to the console who has the higher BMI, together with the full name and the
+// respective BMI. Example: "John Adam's BMI (28.3) is higher than Mark Louis's (23.9)!"
+// Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
+// tall.
+
+
+
+
+// const mark = {
+//     fullName : 'Mark Louis',
+//     mass: 78,
+//     height: 1.69,
+
+//     calcBmi: function(){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+// };
+
+
+
+
+// const john = {
+//     fullName : 'John Adam',
+//     mass: 92,
+//     height: 1.95,
+//     calcBmi: function(){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+// };
+
+
+// mark.calcBmi();
+// console.log(mark.bmi);
+// john.calcBmi();
+// console.log(john.bmi);
+
+
+// console.log(john.bmi, mark.bmi);
+
+// if(mark.bmi > john.bmi){
+//     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s  (${john.bmi})`);
+// } else if (john.bmi > mark.bmi) {
+//     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s  (${mark.bmi})`);
+
+// }
+
+
+
+
+
+
+
