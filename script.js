@@ -471,22 +471,22 @@
 // }
 
 
-const ibraheem  = [
-     'Ibraheem',
-        "Omikunle",
-        2043 - 2020,
-        1982,
-    'Software Engineer',
-    ['Coding', 'Reading', 'Meditating'],
-    ['Toheeb', 'Adam', "Hazzan"],
-    false,
-]
+// const ibraheem  = [
+//      'Ibraheem',
+//         "Omikunle",
+//         2043 - 2020,
+//         1982,
+//     'Software Engineer',
+//     ['Coding', 'Reading', 'Meditating'],
+//     ['Toheeb', 'Adam', "Hazzan"],
+//     false,
+// ]
 
-const types = [];
-for(let i = 0; i < ibraheem.length; i++) {
+// const types = [];
+// for(let i = 0; i < ibraheem.length; i++) {
 
     // Reading from ibraheem array
-    console.log(`the type of "${ibraheem[i]}" is -----> ${typeof ibraheem[i]}`);
+    // console.log(`the type of "${ibraheem[i]}" is -----> ${typeof ibraheem[i]}`);
     // there indexes will be equal to each other.
     // * Filling types arrays
     // types[i] = typeof ibraheem[i];
@@ -494,9 +494,9 @@ for(let i = 0; i < ibraheem.length; i++) {
 
     // The push method can also be use to add to an array.
     // * Push add an element to the end of an array.
-    types.push(typeof ibraheem[i]);
-}
-console.log(types);
+//     types.push(typeof ibraheem[i]);
+// }
+// console.log(types);
 
 
 // *@Remember that arrays are zero based.
@@ -504,3 +504,52 @@ console.log(types);
 // for(let i = 0; i < 7; i++) {
 //     console.log(ibraheem[i]);
 // }
+
+
+// const years = [2001, 2003, 1990, 1956, 1952, 2005, 2000, 2004, 1993, 1997, 2007];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//       const calculateAge = 2022 - years[i];
+//         ages.push(calculateAge)
+// console.log(`You are ${ages[i]} years old.`);
+ 
+// }
+// console.log(`You are ${ages[i]} years old.`);
+// console.log(ages);
+
+
+// **Break and **Continue
+// console.log('-------STRINGS-------');
+// for(let i = 0; i < ibraheem.length; i++) {
+    // if the type of the current element is not a string it will continue.
+    // the continue will exit the current iteration.
+//     if(typeof ibraheem[i] !== 'string') continue;
+
+//     console.log(ibraheem[i], typeof ibraheem[i]);
+// }
+// * Break is use to completely teminate the loop.
+// console.log('-------BREAK WHEN YOU SEE A NUMBER-------');
+// for(let i = 0; i < ibraheem.length; i++) {
+    
+//     if(typeof ibraheem[i] === 'number') break;
+
+//     console.log(ibraheem[i], typeof ibraheem[i]);
+// }
+
+
+const ibraheem  = [
+    'Ibraheem',
+       "Omikunle",
+       2043 - 2020,
+       1982,
+   'Software Engineer',
+   ['Coding', 'Reading', 'Meditating'],
+   ['Toheeb', 'Adam', "Hazzan"],
+   false,
+]
+
+
+
+
+
