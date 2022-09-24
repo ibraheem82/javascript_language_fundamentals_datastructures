@@ -538,18 +538,39 @@
 // }
 
 
-const ibraheem  = [
-    'Ibraheem',
-       "Omikunle",
-       2043 - 2020,
-       1982,
-   'Software Engineer',
-   ['Coding', 'Reading', 'Meditating'],
-   ['Toheeb', 'Adam', "Hazzan"],
-   false,
-]
+
+
+// *Looping through an array backwardly.
+// const ibraheem  = [
+//     'Ibraheem',
+//        "Omikunle",
+//        2043 - 2020,
+//        1982,
+//    'Software Engineer',
+//    ['Coding', 'Reading', 'Meditating'],
+//    ['Toheeb', 'Adam', "Hazzan"],
+//    false,
+// ];
+
+// it is counting the elements in the array and removing 1 from it.
+// decreament
+// for(let i = ibraheem.length - 1; i >= 0;  i--) {
+//     console.log([i], ibraheem[i]);
+// }
 
 
 
+// * Loop in a Loop.
+// for(let exercise = 1; exercise < 4; exercise++) {
+    // console.log(`-------->>>>>>>>>EXERCISE STARING ${exercise} `); 
 
 
+    // for(let repetition = 1; repetition < 6; repetition++) {
+        // can get the variable inside it.
+    //     console.log(`Exercise ${exercise} Lifting weight ${repetition} 🏋️‍♂️`);
+    // }
+
+    // for(let k = 1; k < 6; k++) {
+    //     console.log(`K Testing${k} 🏋️‍♂️`);
+    // }
+// }
