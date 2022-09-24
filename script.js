@@ -462,8 +462,13 @@
 // }
 
 
-
-
-
+// ** Loops in javascript
+const cars = ['Volvo', 'Bmw', 'Toyota', 'Lexus', 'Chevrolet', 'Benz', 'Jeep', 'Bently', 'Audi', 'Land-Rover', 'Tesla', 'Jaguar'];
+for (let index = 1; index < cars.length; index++) {
+    const element = cars[index];
+    console.log(`${element} is moving 🏎.`);
+    console.log(element);
+    
+}
 
 
