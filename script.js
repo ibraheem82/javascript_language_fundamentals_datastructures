@@ -463,12 +463,44 @@
 
 
 // ** Loops in javascript
-const cars = ['Volvo', 'Bmw', 'Toyota', 'Lexus', 'Chevrolet', 'Benz', 'Jeep', 'Bently', 'Audi', 'Land-Rover', 'Tesla', 'Jaguar'];
-for (let index = 1; index < cars.length; index++) {
-    const element = cars[index];
-    console.log(`${element} is moving 🏎.`);
-    console.log(element);
-    
+// const cars = ['Volvo', 'Bmw', 'Toyota', 'Lexus', 'Chevrolet', 'Benz', 'Jeep', 'Bently', 'Audi', 'Land-Rover', 'Tesla', 'Jaguar'];
+// for (let index = 1; index < cars.length; index++) {
+//     const element = cars[index];
+//     console.log(`${element} is moving 🏎.`);
+//     console.log(element);   
+// }
+
+
+const ibraheem  = [
+     'Ibraheem',
+        "Omikunle",
+        2043 - 2020,
+        1982,
+    'Software Engineer',
+    ['Coding', 'Reading', 'Meditating'],
+    ['Toheeb', 'Adam', "Hazzan"],
+    false,
+]
+
+const types = [];
+for(let i = 0; i < ibraheem.length; i++) {
+
+    // Reading from ibraheem array
+    console.log(`the type of "${ibraheem[i]}" is -----> ${typeof ibraheem[i]}`);
+    // there indexes will be equal to each other.
+    // * Filling types arrays
+    // types[i] = typeof ibraheem[i];
+
+
+    // The push method can also be use to add to an array.
+    // * Push add an element to the end of an array.
+    types.push(typeof ibraheem[i]);
 }
+console.log(types);
 
 
+// *@Remember that arrays are zero based.
+// You can get the lenght of an array.
+// for(let i = 0; i < 7; i++) {
+//     console.log(ibraheem[i]);
+// }
