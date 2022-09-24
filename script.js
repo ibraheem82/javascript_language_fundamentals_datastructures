@@ -574,3 +574,24 @@
     //     console.log(`K Testing${k} 🏋️‍♂️`);
     // }
 // }
+
+
+// **While loops
+// can oly specify the condition in the while loop
+
+// let i = 1;
+// while(i <= 20) {
+//     console.log(`go and do it... ${i}`);
+    // it does not really need the counter
+//     i++;
+// }
+
+// trunc() get rid of the decimal number.
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+// while(dice !== 6) {
+//     console.log(`You rolled ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if(dice === 6) console.log('loop is about to end');
+// }
